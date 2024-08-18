@@ -1,24 +1,59 @@
-# TMS - Frontend
+# Core
+> Shared utilities for Angular DevKit.
 
-## **[Frontend Documentation](https://ayushman1024.github.io/documentation/)**
-This project was generated with version 7.3.0.
+# Exception
 
-## Code scaffolding
+# Json
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Schema
 
-## Build
+### SchemaValidatorResult
+```
+export interface SchemaValidatorResult {
+  success: boolean;
+  errors?: string[];
+}
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### SchemaValidator
 
-## Running unit tests
+```
+export interface SchemaValidator {
+  (data: any): Observable<SchemaValidatorResult>;
+}
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### SchemaFormatter
 
-## Running end-to-end tests
+```
+export interface SchemaFormatter {
+  readonly async: boolean;
+  validate(data: any): boolean | Observable<boolean>;
+}
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### SchemaRegistry
 
-## Further help
+```
+export interface SchemaRegistry {
+  compile(schema: Object): Observable<SchemaValidator>;
+  addFormat(name: string, formatter: SchemaFormatter): void;
+}
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### CoreSchemaRegistry
+
+`SchemaRegistry` implementation using https://github.com/epoberezkin/ajv.
+Constructor accepts object containing `SchemaFormatter` that will be added automatically.
+
+```
+export class CoreSchemaRegistry implements SchemaRegistry {
+  constructor(formats: { [name: string]: SchemaFormatter} = {}) {}
+}
+```
+
+# Logger
+
+# Utils
+
+# Virtual FS

@@ -1,66 +1,71 @@
 {
-  "name": "frontend",
-  "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve --port 8000",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+  "_from": "@angular-devkit/core@7.3.3",
+  "_id": "@angular-devkit/core@7.3.3",
+  "_inBundle": false,
+  "_integrity": "sha512-fosULDtMoDWrOyUzTmBkJccOy7zodo02kENyKai7vOv9EWfv9jytkVdNc+jl0ys9OE2QadvSYBo49jhnZxFXfQ==",
+  "_location": "/@angular-devkit/core",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@angular-devkit/core@7.3.3",
+    "name": "@angular-devkit/core",
+    "escapedName": "@angular-devkit%2fcore",
+    "scope": "@angular-devkit",
+    "rawSpec": "7.3.3",
+    "saveSpec": null,
+    "fetchSpec": "7.3.3"
   },
-  "private": true,
+  "_requiredBy": [
+    "/@angular-devkit/architect",
+    "/@angular-devkit/build-angular",
+    "/@angular-devkit/build-webpack",
+    "/@angular-devkit/schematics",
+    "/@angular/cli",
+    "/@ngtools/webpack",
+    "/@schematics/angular",
+    "/@schematics/update"
+  ],
+  "_resolved": "https://registry.npmjs.org/@angular-devkit/core/-/core-7.3.3.tgz",
+  "_shasum": "cd6d5a8eca25ef07b6394bc2b08133d90d08d39f",
+  "_spec": "@angular-devkit/core@7.3.3",
+  "_where": "E:\\ios_repo\\interns-2018\\frontend\\node_modules\\@angular-devkit\\build-angular",
+  "author": {
+    "name": "Angular Authors"
+  },
+  "bugs": {
+    "url": "https://github.com/angular/angular-cli/issues"
+  },
+  "bundleDependencies": false,
   "dependencies": {
-    "@angular/animations": "^7.2.11",
-    "@angular/cdk": "~7.3.3",
-    "@angular/common": "~7.2.0",
-    "@angular/compiler": "~7.2.0",
-    "@angular/core": "~7.2.0",
-    "@angular/forms": "~7.2.0",
-    "@angular/material": "^7.3.3",
-    "@angular/platform-browser": "~7.2.0",
-    "@angular/platform-browser-dynamic": "~7.2.0",
-    "@angular/router": "~7.2.0",
-    "@fullcalendar/core": "^4.1.0",
-    "@fullcalendar/daygrid": "^4.1.0",
-    "@fullcalendar/interaction": "^4.1.0",
-    "@fullcalendar/timegrid": "^4.1.0",
-    "@ng-bootstrap/ng-bootstrap": "^4.1.1",
-    "@ngxs/devtools-plugin": "^3.3.2",
-    "@ngxs/logger-plugin": "^3.3.2",
-    "@ngxs/schematics": "0.0.1-alpha.5",
-    "@ngxs/store": "^3.3.2",
-    "bootstrap": "^4.3.1",
-    "core-js": "^2.5.4",
-    "hammerjs": "^2.0.8",
-    "primeflex": "^1.0.0-rc.1",
-    "primeicons": "^1.0.0",
-    "primeng": "^7.1.0",
-    "quill": "^1.3.6",
-    "rxjs": "~6.3.3",
-    "tslib": "^1.9.0",
-    "zone.js": "~0.8.26"
+    "ajv": "6.9.1",
+    "chokidar": "2.0.4",
+    "fast-json-stable-stringify": "2.0.0",
+    "rxjs": "6.3.3",
+    "source-map": "0.7.3"
   },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "^0.13.9",
-    "@angular/cli": "~7.3.0",
-    "@angular/compiler-cli": "~7.2.0",
-    "@angular/language-service": "~7.2.0",
-    "@ngxs/schematics": "^0.0.1-alpha.5",
-    "@types/jasmine": "~2.8.8",
-    "@types/jasminewd2": "~2.0.3",
-    "@types/node": "~8.9.4",
-    "codelyzer": "~4.5.0",
-    "jasmine-core": "~2.99.1",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "~3.1.1",
-    "karma-chrome-launcher": "~2.2.0",
-    "karma-coverage-istanbul-reporter": "~2.0.1",
-    "karma-jasmine": "~1.1.2",
-    "karma-jasmine-html-reporter": "^0.2.2",
-    "protractor": "~5.4.0",
-    "ts-node": "~7.0.0",
-    "tslint": "~5.11.0",
-    "typescript": "~3.2.2"
-  }
+  "deprecated": false,
+  "description": "Angular DevKit - Core Utility Library",
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.5.1"
+  },
+  "homepage": "https://github.com/angular/angular-cli",
+  "keywords": [
+    "angular",
+    "Angular CLI",
+    "devkit",
+    "sdk",
+    "Angular DevKit",
+    "core"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "@angular-devkit/core",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/angular-cli.git"
+  },
+  "typings": "src/index.d.ts",
+  "version": "7.3.3"
 }
